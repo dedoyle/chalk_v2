@@ -1,0 +1,28 @@
+<ion-view class="expense" view-title="{{ expense.currDay }}">
+  <ion-nav-buttons side="right">
+    <button class="button button-icon icon ion-calendar" data-ng-click="expense.cleanup()"></button>
+    <button data-ng-click="expense.goToAddExpense()" class="button button-icon icon ion-plus"></button>
+  </ion-nav-buttons>
+  <ion-content class="assertive-bg has-footer">
+    <ion-slide-box style="height: 100%;" on-slide-changed="expense.slideChanged($index)" active-slide="expense.selectedSlide" does-continue="true" show-pager="false" delegate-handle="slideshow-slidebox">
+      <ion-slide ng-repeat="slide in expense.slides">
+        <div class="show-box">
+          <div class="l">CNY</div>
+          <div class="r">{{ slide.items | sumOfItems:'money' }}</div>
+        </div>
+        <ion-list class="list-primary">
+          <ion-item data-ng-repeat="item in slide.items | orderBy: 'date':false track by $index">
+            <div data-ng-click="expense.goToDetail(item)">
+              <i class="icon" data-ng-class="item.icon"></i>
+              <span data-ng-bind="item.name"></span>
+              <span class="item-note" data-ng-bind="item.money"></span>
+            </div>
+          </ion-item>
+        </ion-list>
+      </ion-slide>
+
+    </ion-slide-box>
+  </ion-content>
+  <debudget></debudget>
+
+</ion-view>

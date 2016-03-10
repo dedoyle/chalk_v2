@@ -1,0 +1,68 @@
+p {
+  margin-bottom: 0;
+}
+.l {
+  float: left;
+}
+.r {
+  float: right;
+}
+.scroll {
+  height: 100%;
+  min-height: 100%;
+}
+.scroll-bar-indicator {
+  display: none;
+}
+.bar {
+  .title {
+    margin-left: 0;
+    font-size: 17px;
+    right: 0 !important;
+  }
+  button:before {
+    font-size: 25px !important;
+  }
+}
+.item {
+  padding: 10px;
+  border-color: #bdbcb7;
+  background-color: transparent;
+  line-height: 37px;
+  .icon {
+    margin-right: 15px;
+    font-size: 30px;
+    vertical-align: middle;
+  }
+  .item-note {
+    font-size: 16px;
+  }
+}
+.show-box {
+  padding: 20px;
+  font-size: 3em;
+  line-height: 42px;
+  overflow: hidden;
+  color: $font-light;
+}
+.padding-vertical-20 {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.row-20 {
+  height: 20%;
+}
+.row-25 {
+  height: 25%;
+}
+.row-50 {
+  height: 50%;
+}
+.row-80 {
+  height: 80%;
+}
+.ovh {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}

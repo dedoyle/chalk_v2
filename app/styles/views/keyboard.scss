@@ -1,0 +1,67 @@
+.keyboard {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 2;
+  height: 60%;
+  max-height: 500px;
+  background: #fcfaea;
+  &.only-number {
+    bottom: -12%;
+  }
+  .col {
+    padding: 0;
+    height: 100%;
+  }
+  .button {
+    margin: 0;
+    height: 100%;
+    min-height: 20px;
+    max-height: 100px;
+  }
+  .num .button {
+    color: $font-dark;
+  }
+  .controll .button {
+    max-height: 200px;
+  }
+  .button-clear.activated {
+    opacity: 1;
+    background-color: #dfddcb;
+  }
+  .ac.activated {
+    opacity: 1;
+    background-color: #c03f39;
+  }
+  .button-green.activated {
+    opacity: 1;
+    background-color: #85af32;
+  }
+  .divide {
+    color: #ef9f51;
+  }
+  .multiply {
+    color: #82a7e3;
+  }
+  .subtract {
+    color: #e6534b;
+  }
+  .add {
+    color: #9bca3e;
+  }
+  .button-red {
+    color: #fff;
+    background: #e6534b;
+  }
+  .button-green {
+    color: #fff;
+    background: #9bca3e;
+  }
+  .row {
+    padding: 0;
+  }
+  .row + .row {
+    margin-top: 0;
+  }
+}

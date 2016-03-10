@@ -1,0 +1,16 @@
+<ion-view view-title="预算编列" class="setbudget">
+  <ion-content class="stable-bg">
+    <div class="show-box energized-bg" data-ng-click="setbudget.showkeyboard = true">
+      <div class="r">￥{{setbudget.budget.money || '0'}}</div>
+    </div>
+    <ion-list>
+      <ion-item>
+        <i class="icon ion-calendar"></i><span>预算周期</span><p class="item-note">起始于每月第{{ setbudget.budget.regularDay || 1}}天</p>
+      </ion-item>
+      <ion-item>
+        <morph-carousel data-items="setbudget.days" on-selected="setbudget.budget.regularDay" identifier="modal-carousel"></morph-carousel>
+      </ion-item>
+    </ion-list>
+    <dekeyboard onlynumber="true" data-ng-if="setbudget.showkeyboard" calculation="setbudget.budget.money" showkeyboard="setbudget.showkeyboard"></dekeyboard>
+  </ion-content>
+</ion-view>

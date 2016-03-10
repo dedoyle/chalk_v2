@@ -1,0 +1,22 @@
+{
+  "name": "ChalkV2",
+  "author": "dedoyle <dedoyle@163.com>",
+  "private": "true",
+  "devDependencies": {},
+  "dependencies": {
+    "ionic": "~1.1.0",
+    "angular": "~1.4.3",
+    "ngCordova": "~0.1.17-alpha",
+    "angular-resource": "~1.4.3",
+    "lodash": "~3.10.0",
+    "angular-once": "~0.1.9",
+    "pouchdb": "~5.1.0",
+    "pouchdb-find": "~0.8.0",
+    "moment": "~2.10.6",
+    "angular-ui-router": "~0.2.15",
+    "pouchdb-quick-search": "~1.1.1"
+  },
+  "resolutions": {
+    "angular": "1.4.3"
+  }
+}
